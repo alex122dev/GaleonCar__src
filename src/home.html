@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<section class="page__main-banner main-banner">
+				<div class="main-banner__image _ibg">
+					<img src="@img/main-banner/main-banner.jpg" alt="main-banner">
+				</div>
+				<div class="main-banner__container _container">
+					<div class="main-banner__body">
+						<div class="main-banner__top">
+							<div class="main-banner__title">АРЕНДА</div>
+							<div class="main-banner__search search-main">
+								<button type="button" class="search-main__burger"><span></span></button>
+								<form action="" method="get" class="search-main__form form-search">
+									<button type="button" class="form-search__btn-close"></button>
+									<div data-one-select class="form-search__body">
+										<div class="form-search__title">ПОДОБРАТЬ АВТОМОБИЛЬ</div>
+										<select data-label name="auto-brand" class="form-search__brand">
+											<option value="" selected>Марка автомобиля</option>
+											<option value="Mercedec">Mercedec</option>
+											<option value="Audi">Audi</option>
+											<option value="VW">VW</option>
+											<option value="4">Skoda</option>
+										</select>
+										<select data-label name="auto-model" class="form-search__model">
+											<option value="" selected>Модель автомобиля</option>
+											<option value="1">A1</option>
+											<option value="2">A2</option>
+											<option value="3">A3</option>
+											<option value="4">A4</option>
+										</select>
+										<select data-label name="auto-type" class="form-search__type">
+											<option value="" selected>Тип автомобиля</option>
+											<option value="B1">B1</option>
+											<option value="B2">B2</option>
+											<option value="B3">B3</option>
+											<option value="B4">B4</option>
+										</select>
+										<button type="submit" class="form-search__button btn">ВЫБРАТЬ</button>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="main-banner__big-title">
+							ПРЕМИУМ АВТОМОБИЛЕЙ
+						</div>
+						<div class="main-banner__slider slider-main">
+							<div class="slider-main__arrows">
+								<button type="button"
+									class="slider-main__arrow slider-arrow_prev _icon-slider-arrow _link_arrow-slider"></button>
+								<span></span>
+								<button type="button"
+									class="slider-main__arrow slider-arrow_next _icon-slider-arrow _link_arrow-slider"></button>
+							</div>
+							<div class="slider-main__slider swiper">
+								<div class="slider-main__wrapper swiper-wrapper">
+									<div class="slider-main__slide swiper-slide">
+										<div class="slider-main__image _ibg-slide">
+											<img src="@img/main-banner/main-slider_1.jpg" alt="car">
+										</div>
+										<div class="slider-main__choice choice-main">
+											<div class="choice-main__items">
+												<a tabindex="-1" href="" class="choice-main__item _link_icon">
+													<div class="choice-main__icon">
+														<img src="@img/main-banner/choice/choice_1.svg" alt="icon">
+													</div>
+													<div class="choice-main__text">Мерседес</div>
+												</a>
+												<a tabindex="-1" href="" class="choice-main__item _link_icon">
+													<div class="choice-main__icon">
+														<img src="@img/main-banner/choice/choice_2.svg" alt="icon">
+													</div>
+													<div class="choice-main__text">Майбах</div>
+												</a>
+												<a tabindex="-1" href="" class="choice-main__item _link_icon">
+													<div class="choice-main__icon">
+														<img src="@img/main-banner/choice/choice_3.svg" alt="icon">
+													</div>
+													<div class="choice-main__text">Кроссовер</div>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="slider-main__slide swiper-slide">
+										<div class="slider-main__image _ibg-slide">
+											<img src="@img/main-banner/main-slider_2.jpg" alt="car">
+										</div>
+										<div class="slider-main__choice choice-main">
+											<div class="choice-main__items">
+												<a tabindex="-1" href="" class="choice-main__item _link_icon">
+													<div class="choice-main__icon">
+														<img src="@img/main-banner/choice/choice_1.svg" alt="icon">
+													</div>
+													<div class="choice-main__text">Мерседес</div>
+												</a>
+												<a tabindex="-1" href="" class="choice-main__item _link_icon">
+													<div class="choice-main__icon">
+														<img src="@img/main-banner/choice/choice_2.svg" alt="icon">
+													</div>
+													<div class="choice-main__text">Майбах</div>
+												</a>
+												<a tabindex="-1" href="" class="choice-main__item _link_icon">
+													<div class="choice-main__icon">
+														<img src="@img/main-banner/choice/choice_3.svg" alt="icon">
+													</div>
+													<div class="choice-main__text">Кроссовер</div>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="slider-main__slide swiper-slide">
+										<div class="slider-main__image _ibg-slide">
+											<img src="@img/main-banner/main-slider_3.jpg" alt="car">
+										</div>
+										<div class="slider-main__choice choice-main">
+											<div class="choice-main__items">
+												<a tabindex="-1" href="" class="choice-main__item _link_icon">
+													<div class="choice-main__icon">
+														<img src="@img/main-banner/choice/choice_1.svg" alt="icon">
+													</div>
+													<div class="choice-main__text">Мерседес</div>
+												</a>
+												<a tabindex="-1" href="" class="choice-main__item _link_icon">
+													<div class="choice-main__icon">
+														<img src="@img/main-banner/choice/choice_2.svg" alt="icon">
+													</div>
+													<div class="choice-main__text">Майбах</div>
+												</a>
+												<a tabindex="-1" href="" class="choice-main__item _link_icon">
+													<div class="choice-main__icon">
+														<img src="@img/main-banner/choice/choice_3.svg" alt="icon">
+													</div>
+													<div class="choice-main__text">Кроссовер</div>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="slider-main__slide swiper-slide">
+										<div class="slider-main__image _ibg-slide">
+											<img src="@img/main-banner/main-slider_4.jpg" alt="car">
+										</div>
+										<div class="slider-main__choice choice-main">
+											<div class="choice-main__items">
+												<a tabindex="-1" href="" class="choice-main__item _link_icon">
+													<div class="choice-main__icon">
+														<img src="@img/main-banner/choice/choice_1.svg" alt="icon">
+													</div>
+													<div class="choice-main__text">Мерседес</div>
+												</a>
+												<a tabindex="-1" href="" class="choice-main__item _link_icon">
+													<div class="choice-main__icon">
+														<img src="@img/main-banner/choice/choice_2.svg" alt="icon">
+													</div>
+													<div class="choice-main__text">Майбах</div>
+												</a>
+												<a tabindex="-1" href="" class="choice-main__item _link_icon">
+													<div class="choice-main__icon">
+														<img src="@img/main-banner/choice/choice_3.svg" alt="icon">
+													</div>
+													<div class="choice-main__text">Кроссовер</div>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="slider-main__slide swiper-slide">
+										<div class="slider-main__image _ibg-slide">
+											<img src="@img/main-banner/main-slider_5.jpg" alt="car">
+										</div>
+										<div class="slider-main__choice choice-main">
+											<div class="choice-main__items">
+												<a tabindex="-1" href="" class="choice-main__item _link_icon">
+													<div class="choice-main__icon">
+														<img src="@img/main-banner/choice/choice_1.svg" alt="icon">
+													</div>
+													<div class="choice-main__text">Мерседес</div>
+												</a>
+												<a tabindex="-1" href="" class="choice-main__item _link_icon">
+													<div class="choice-main__icon">
+														<img src="@img/main-banner/choice/choice_2.svg" alt="icon">
+													</div>
+													<div class="choice-main__text">Майбах</div>
+												</a>
+												<a tabindex="-1" href="" class="choice-main__item _link_icon">
+													<div class="choice-main__icon">
+														<img src="@img/main-banner/choice/choice_3.svg" alt="icon">
+													</div>
+													<div class="choice-main__text">Кроссовер</div>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__rent-type rent-type">
+				<div class="rent-type__body">
+					<div class="rent-type__subtitle subtitle">ВИДЫ</div>
+					<div class="rent-type__title title">АРЕНДЫ</div>
+					<div class="rent-type__row">
+						<div class="rent-type__column">
+							<div class="rent-type__image">
+								<img src="@img/rent-type/rent-type_1.jpg" alt="rent">
+								<button type="button" class="rent-type__button btn btn_rent-type">С ВОДИТЕЛЕМ</button>
+							</div>
+
+							<div class="rent-type__item">
+								<button type="button"
+									class="rent-type__scroll-arrow-down _link_icon _icon-search-arrow"></button>
+								<button type="button"
+									class="rent-type__scroll-arrow-up _link_icon _icon-search-arrow"></button>
+								<div data-showmore="size" class="rent-type__showmore showmore-rent-type">
+									<div data-showmore-content="150" class="showmore-rent-type__content">
+										<p class="rent-type__text">
+											Вы можете арендовать
+											автомобиль для того, чтобы роскошно встретить любимого человека из аэропорта
+											или
+											свозить его на свидания.
+											Провести незабываемую фотосессию. Или элегантно приехать на бизнес встречу.
+											Устроить
+											романтическое свидание по ночному городу или арендовать автомобиль на
+											свадьбу.
+										</p>
+										<p class="rent-type__text">
+											Вы можете арендовать
+											автомобиль для того, чтобы роскошно встретить любимого человека из аэропорта
+											или
+											свозить его на свидания.
+											Провести незабываемую фотосессию. Или элегантно приехать на бизнес встречу.
+											Устроить
+											романтическое свидание по ночному городу или арендовать автомобиль на
+											свадьбу.
+										</p>
+										<p class="rent-type__text">
+											Вы можете арендовать
+											автомобиль для того, чтобы роскошно встретить любимого человека из аэропорта
+											или
+											свозить его на свидания.
+											Провести незабываемую фотосессию. Или элегантно приехать на бизнес встречу.
+											Устроить
+											романтическое свидание по ночному городу или арендовать автомобиль на
+											свадьбу.
+										</p>
+									</div>
+									<button hidden data-showmore-button type="button"
+										class="showmore-rent-type__more _link_icon"><span>Показать
+											еще</span><span>Скpыть</span></button>
+								</div>
+								<a href="" class="rent-type__link btn btn_rent-type-link">ЗАКАЗАТЬ МАШИНУ</a>
+							</div>
+						</div>
+						<div class="rent-type__column">
+							<div class="rent-type__image">
+								<img src="@img/rent-type/rent-type_2.jpg" alt="rent">
+								<button type="button" class="rent-type__button btn btn_rent-type">ДЛЯ ОСОБЫХ
+									ЦЕЛЕЙ</button>
+							</div>
+
+							<div class="rent-type__item">
+								<button type="button"
+									class="rent-type__scroll-arrow-down _link_icon _icon-search-arrow"></button>
+								<button type="button"
+									class="rent-type__scroll-arrow-up _link_icon _icon-search-arrow"></button>
+								<div data-showmore="size" class="rent-type__showmore showmore-rent-type">
+									<div data-showmore-content="150" class="showmore-rent-type__content">
+										<p class="rent-type__text">
+											Вы можете арендовать
+											автомобиль для того, чтобы роскошно встретить любимого человека из аэропорта
+											или
+											свозить его на свидания.
+											Провести незабываемую фотосессию. Или элегантно приехать на бизнес встречу.
+											Устроить
+											романтическое свидание по ночному городу или арендовать автомобиль на
+											свадьбу.
+										</p>
+									</div>
+									<button hidden data-showmore-button type="button"
+										class="showmore-rent-type__more _link_icon"><span>Показать
+											еще</span><span>Скpыть</span></button>
+								</div>
+								<a href="" class="rent-type__link btn btn_rent-type-link">ЗАКАЗАТЬ МАШИНУ</a>
+							</div>
+						</div>
+						<div class="rent-type__column">
+							<div class="rent-type__image">
+								<img src="@img/rent-type/rent-type_3.jpg" alt="rent">
+								<button type="button" class="rent-type__button btn btn_rent-type">БЕЗ ВОДИТЕЛЯ</button>
+							</div>
+
+							<div class="rent-type__item">
+								<button type="button"
+									class="rent-type__scroll-arrow-down _link_icon _icon-search-arrow"></button>
+								<button type="button"
+									class="rent-type__scroll-arrow-up _link_icon _icon-search-arrow"></button>
+								<div data-showmore="size" class="rent-type__showmore showmore-rent-type">
+									<div data-showmore-content="150" class="showmore-rent-type__content">
+										<p class="rent-type__text">
+											Вы можете арендовать
+											автомобиль для того, чтобы роскошно встретить любимого человека из аэропорта
+											или
+											свозить его на свидания.
+											Провести незабываемую фотосессию. Или элегантно приехать на бизнес встречу.
+											Устроить
+											романтическое свидание по ночному городу или арендовать автомобиль на
+											свадьбу.
+										</p>
+										<p class="rent-type__text">
+											Вы можете арендовать
+											автомобиль для того, чтобы роскошно встретить любимого человека из аэропорта
+											или
+											свозить его на свидания.
+											Провести незабываемую фотосессию. Или элегантно приехать на бизнес встречу.
+											Устроить
+											романтическое свидание по ночному городу или арендовать автомобиль на
+											свадьбу.
+										</p>
+									</div>
+									<button hidden data-showmore-button type="button"
+										class="showmore-rent-type__more _link_icon"><span>Показать
+											еще</span><span>Скpыть</span></button>
+								</div>
+								<a href="" class="rent-type__link btn btn_rent-type-link">ЗАКАЗАТЬ МАШИНУ</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__autopark autopark">
+				<div class="autopark__container _container">
+					<div class="autopark__title title">АВТОПАРК</div>
+					<nav class="autopark__filter filter-autopark">
+						<ul class="filter-autopark__list">
+							<li class="filter-autopark__item">
+								<button data-filter="premium" type="button"
+									class="filter-autopark__button subtitle _link_arrow-slider">Премиум</button>
+							</li>
+							<li class="filter-autopark__item">
+								<button data-filter="business" type="button"
+									class="filter-autopark__button subtitle _link_arrow-slider">Бизнес</button>
+							</li>
+							<li class="filter-autopark__item">
+								<button data-filter="sport" type="button"
+									class="filter-autopark__button subtitle _link_arrow-slider">Спорт</button>
+							</li>
+						</ul>
+					</nav>
+					<div class="slider-autopark__arrows">
+						<button type="button"
+							class="slider-autopark__arrow slider-arrow slider-arrow_prev _icon-slider-arrow _link_arrow-slider"></button>
+						<div class="slider-autopark__pagination"></div>
+						<button type="button"
+							class="slider-autopark__arrow slider-arrow slider-arrow_next _icon-slider-arrow _link_arrow-slider"></button>
+					</div>
+				</div>
+				<div class="autopark__slider slider-autopark">
+					<div class="slider-autopark__slider swiper">
+						<div class="slider-autopark__wrapper swiper-wrapper">
+							<div class="slider-autopark__slide swiper-slide slider-autopark_premium">
+								<img src="@img/autopark/autopark_p1.jpg" alt="car">
+								<a href="" class="slider-autopark__link btn btn_rent-type">ЗАКАЗАТЬ МАШИНУ</a>
+							</div>
+							<div class="slider-autopark__slide swiper-slide slider-autopark_business">
+								<img src="@img/autopark/autopark_b1.jpg" alt="car">
+								<a href="" class="slider-autopark__link btn btn_rent-type">ЗАКАЗАТЬ МАШИНУ</a>
+							</div>
+							<div class="slider-autopark__slide swiper-slide slider-autopark_sport">
+								<img src="@img/autopark/autopark_s1.jpg" alt="car">
+								<a href="" class="slider-autopark__link btn btn_rent-type">ЗАКАЗАТЬ МАШИНУ</a>
+							</div>
+							<div class="slider-autopark__slide swiper-slide slider-autopark_premium">
+								<img src="@img/autopark/autopark_p1.jpg" alt="car">
+								<a href="" class="slider-autopark__link btn btn_rent-type">ЗАКАЗАТЬ МАШИНУ</a>
+							</div>
+							<div class="slider-autopark__slide swiper-slide slider-autopark_business">
+								<img src="@img/autopark/autopark_b1.jpg" alt="car">
+								<a href="" class="slider-autopark__link btn btn_rent-type">ЗАКАЗАТЬ МАШИНУ</a>
+							</div>
+							<div class="slider-autopark__slide swiper-slide slider-autopark_sport">
+								<img src="@img/autopark/autopark_s1.jpg" alt="car">
+								<a href="" class="slider-autopark__link btn btn_rent-type">ЗАКАЗАТЬ МАШИНУ</a>
+							</div>
+							<div class="slider-autopark__slide swiper-slide slider-autopark_premium">
+								<img src="@img/autopark/autopark_p1.jpg" alt="car">
+								<a href="" class="slider-autopark__link btn btn_rent-type">ЗАКАЗАТЬ МАШИНУ</a>
+							</div>
+							<div class="slider-autopark__slide swiper-slide slider-autopark_business">
+								<img src="@img/autopark/autopark_b1.jpg" alt="car">
+								<a href="" class="slider-autopark__link btn btn_rent-type">ЗАКАЗАТЬ МАШИНУ</a>
+							</div>
+							<div class="slider-autopark__slide swiper-slide slider-autopark_sport">
+								<img src="@img/autopark/autopark_s1.jpg" alt="car">
+								<a href="" class="slider-autopark__link btn btn_rent-type">ЗАКАЗАТЬ МАШИНУ</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__rent-terms rent-terms">
+				<div class="rent-terms__image">
+					<img src="@img/rent-terms/bakcground-banner.jpg" alt="city">
+				</div>
+				<div class="rent-terms__container _container">
+					<div class="rent-terms__subtitle sutitle">УСЛОВИЯ</div>
+					<div class="rent-terms__title title">АРЕНДЫ</div>
+					<div class="rent-terms__body">
+						<div data-spollers data-one-spoller class="rent-terms__spollers spollers-rent-terms">
+							<div class="spollers-rent-terms__item">
+								<button type="button" data-spoller
+									class="spollers-rent-terms__title _icon-search-arrow _link_icon">Бронирование</button>
+								<ul class="spollers-rent-terms__list">
+									<li class="spollers-rent-terms__unit">Эксплуатировать автомобиль только
+										в
+										пределах СПб и ЛО. Выезд за пределы ЛО согласовывается индивидуально.
+									</li>
+									<li class="spollers-rent-terms__unit">Не нарушать скоростные ограничения
+										и не
+										использовать экстремальные техники вождения.</li>
+									<li class="spollers-rent-terms__unit">Не передавать управление другому
+										человеку
+										без оформления на него договора аренды. При желании вы можете бесплатно
+										внести второго водителя в договор аренды.</li>
+									<li class="spollers-rent-terms__unit">Не управлять транспортным
+										средством в
+										состоянии алкогольного опьянения.</li>
+									<li class="spollers-rent-terms__unit">Не перевозить оружие и вещества,
+										запрещенные законодательством Российской Федерации.</li>
+									<li class="spollers-rent-terms__unit">Соблюдать правила парковки</li>
+									<li class="spollers-rent-terms__unit">Соблюдать чистоту и не курить в
+										салоне
+										автомобиля.</li>
+									<li class="spollers-rent-terms__unit">Перевозить животных только в
+										закрытых
+										переносках, исключающих прямой контакт животных с салоном автомобиля.</li>
+									<li class="spollers-rent-terms__unit">Вернуть автомобиль в целости,
+										сохранности,
+										технически исправным и чистым для оперативного осмотра.</li>
+								</ul>
+							</div>
+							<div class="spollers-rent-terms__item">
+								<button type="button" data-spoller
+									class="spollers-rent-terms__title _icon-search-arrow _link_icon _spoller-active">ПРАВИЛА
+									АРЕНДЫ</button>
+								<ul class="spollers-rent-terms__list">
+									<li class="spollers-rent-terms__unit">Эксплуатировать автомобиль только
+										в
+										пределах СПб и ЛО. Выезд за пределы ЛО согласовывается индивидуально.
+									</li>
+									<li class="spollers-rent-terms__unit">Не нарушать скоростные ограничения
+										и не
+										использовать экстремальные техники вождения.</li>
+									<li class="spollers-rent-terms__unit">Не передавать управление другому
+										человеку
+										без оформления на него договора аренды. При желании вы можете бесплатно
+										внести второго водителя в договор аренды.</li>
+									<li class="spollers-rent-terms__unit">Не управлять транспортным
+										средством в
+										состоянии алкогольного опьянения.</li>
+									<li class="spollers-rent-terms__unit">Не перевозить оружие и вещества,
+										запрещенные законодательством Российской Федерации.</li>
+									<li class="spollers-rent-terms__unit">Соблюдать правила парковки</li>
+									<li class="spollers-rent-terms__unit">Соблюдать чистоту и не курить в
+										салоне
+										автомобиля.</li>
+									<li class="spollers-rent-terms__unit">Перевозить животных только в
+										закрытых
+										переносках, исключающих прямой контакт животных с салоном автомобиля.</li>
+									<li class="spollers-rent-terms__unit">Вернуть автомобиль в целости,
+										сохранности,
+										технически исправным и чистым для оперативного осмотра.</li>
+								</ul>
+							</div>
+							<div class="spollers-rent-terms__item">
+								<button type="button" data-spoller
+									class="spollers-rent-terms__title _icon-search-arrow _link_icon">Обеспечительный
+									платеж</button>
+								<ul class="spollers-rent-terms__list">
+									<li class="spollers-rent-terms__unit">Эксплуатировать автомобиль только
+										в
+										пределах СПб и ЛО. Выезд за пределы ЛО согласовывается индивидуально.
+									</li>
+									<li class="spollers-rent-terms__unit">Не нарушать скоростные ограничения
+										и не
+										использовать экстремальные техники вождения.</li>
+									<li class="spollers-rent-terms__unit">Не передавать управление другому
+										человеку
+										без оформления на него договора аренды. При желании вы можете бесплатно
+										внести второго водителя в договор аренды.</li>
+									<li class="spollers-rent-terms__unit">Не управлять транспортным
+										средством в
+										состоянии алкогольного опьянения.</li>
+									<li class="spollers-rent-terms__unit">Не перевозить оружие и вещества,
+										запрещенные законодательством Российской Федерации.</li>
+									<li class="spollers-rent-terms__unit">Соблюдать правила парковки</li>
+									<li class="spollers-rent-terms__unit">Соблюдать чистоту и не курить в
+										салоне
+										автомобиля.</li>
+									<li class="spollers-rent-terms__unit">Перевозить животных только в
+										закрытых
+										переносках, исключающих прямой контакт животных с салоном автомобиля.</li>
+									<li class="spollers-rent-terms__unit">Вернуть автомобиль в целости,
+										сохранности,
+										технически исправным и чистым для оперативного осмотра.</li>
+								</ul>
+							</div>
+							<div class="spollers-rent-terms__item">
+								<button type="button" data-spoller
+									class="spollers-rent-terms__title _icon-search-arrow _link_icon">страхование</button>
+								<ul class="spollers-rent-terms__list">
+									<li class="spollers-rent-terms__unit">Эксплуатировать автомобиль только
+										в
+										пределах СПб и ЛО. Выезд за пределы ЛО согласовывается индивидуально.
+									</li>
+									<li class="spollers-rent-terms__unit">Не нарушать скоростные ограничения
+										и не
+										использовать экстремальные техники вождения.</li>
+									<li class="spollers-rent-terms__unit">Не передавать управление другому
+										человеку
+										без оформления на него договора аренды. При желании вы можете бесплатно
+										внести второго водителя в договор аренды.</li>
+									<li class="spollers-rent-terms__unit">Не управлять транспортным
+										средством в
+										состоянии алкогольного опьянения.</li>
+									<li class="spollers-rent-terms__unit">Не перевозить оружие и вещества,
+										запрещенные законодательством Российской Федерации.</li>
+									<li class="spollers-rent-terms__unit">Соблюдать правила парковки</li>
+									<li class="spollers-rent-terms__unit">Соблюдать чистоту и не курить в
+										салоне
+										автомобиля.</li>
+									<li class="spollers-rent-terms__unit">Перевозить животных только в
+										закрытых
+										переносках, исключающих прямой контакт животных с салоном автомобиля.</li>
+									<li class="spollers-rent-terms__unit">Вернуть автомобиль в целости,
+										сохранности,
+										технически исправным и чистым для оперативного осмотра.</li>
+								</ul>
+							</div>
+							<div class="spollers-rent-terms__item">
+								<button type="button" data-spoller
+									class="spollers-rent-terms__title _icon-search-arrow _link_icon">доставка и
+									возврат</button>
+								<ul class="spollers-rent-terms__list">
+									<li class="spollers-rent-terms__unit">Эксплуатировать автомобиль только
+										в
+										пределах СПб и ЛО. Выезд за пределы ЛО согласовывается индивидуально.
+									</li>
+									<li class="spollers-rent-terms__unit">Не нарушать скоростные ограничения
+										и не
+										использовать экстремальные техники вождения.</li>
+									<li class="spollers-rent-terms__unit">Не передавать управление другому
+										человеку
+										без оформления на него договора аренды. При желании вы можете бесплатно
+										внести второго водителя в договор аренды.</li>
+									<li class="spollers-rent-terms__unit">Не управлять транспортным
+										средством в
+										состоянии алкогольного опьянения.</li>
+									<li class="spollers-rent-terms__unit">Не перевозить оружие и вещества,
+										запрещенные законодательством Российской Федерации.</li>
+									<li class="spollers-rent-terms__unit">Соблюдать правила парковки</li>
+									<li class="spollers-rent-terms__unit">Соблюдать чистоту и не курить в
+										салоне
+										автомобиля.</li>
+									<li class="spollers-rent-terms__unit">Перевозить животных только в
+										закрытых
+										переносках, исключающих прямой контакт животных с салоном автомобиля.</li>
+									<li class="spollers-rent-terms__unit">Вернуть автомобиль в целости,
+										сохранности,
+										технически исправным и чистым для оперативного осмотра.</li>
+								</ul>
+							</div>
+						</div>
+						<div class="rent-terms__requirements requirements-rent-terms">
+							<div class="requirements-rent-terms__items">
+								<div class="requirements-rent-terms__item">
+									<div class="requirements-rent-terms__icon">
+										<img src="@img/rent-terms/icon_calendar.svg" alt="calendar">
+									</div>
+									<div class="requirements-rent-terms__content">
+										<div class="requirements-rent-terms__title">Документы</div>
+										<div class="requirements-rent-terms__text">Паспорт и водительское
+											удостоверение</div>
+									</div>
+								</div>
+								<div class="requirements-rent-terms__item">
+									<div class="requirements-rent-terms__icon">
+										<img src="@img/rent-terms/icon_age.svg" alt="age">
+									</div>
+									<div class="requirements-rent-terms__content">
+										<div class="requirements-rent-terms__title">Возраст</div>
+										<div class="requirements-rent-terms__text">от 21 года</div>
+									</div>
+								</div>
+								<div class="requirements-rent-terms__item">
+									<div class="requirements-rent-terms__icon">
+										<img src="@img/rent-terms/icon_experience.svg" alt="experience">
+									</div>
+									<div class="requirements-rent-terms__content">
+										<div class="requirements-rent-terms__title">Стаж</div>
+										<div class="requirements-rent-terms__text">не менее 2 лет</div>
+									</div>
+								</div>
+								<div class="requirements-rent-terms__item">
+									<div class="requirements-rent-terms__icon">
+										<img src="@img/rent-terms/icon_time.svg" alt="time">
+									</div>
+									<div class="requirements-rent-terms__content">
+										<div class="requirements-rent-terms__title">Срок аренды</div>
+										<div class="requirements-rent-terms__text">от 1 часа</div>
+									</div>
+								</div>
+								<div class="requirements-rent-terms__item">
+									<div class="requirements-rent-terms__icon">
+										<img src="@img/rent-terms/icon_price.svg" alt="price">
+									</div>
+									<div class="requirements-rent-terms__content">
+										<div class="requirements-rent-terms__title">Цена</div>
+										<div class="requirements-rent-terms__text">фиксированная</div>
+									</div>
+								</div>
+								<div class="requirements-rent-terms__item">
+									<div class="requirements-rent-terms__icon">
+										<img src="@img/rent-terms/icon_control.svg" alt="control">
+									</div>
+									<div class="requirements-rent-terms__content">
+										<div class="requirements-rent-terms__title">Управление</div>
+										<div class="requirements-rent-terms__text">возможна передача</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__reviews reviews">
+				<div class="reviews__top">
+					<div class="reviews__container _container">
+						<div class="reviews__subtitle subtitle">ОТЗЫВЫ</div>
+						<div class="reviews__title title">НАШИХ КЛИЕНТОВ</div>
+						<div class="reviews__slider-small slider-small-reviews">
+							<div class="slider-small-reviews__slider swiper">
+								<div class="slider-small-reviews__wrapper swiper-wrapper">
+									<div class="slider-small-reviews__slide swiper-slide">
+										<div class="slider-small-reviews__icon">
+											<img src="@img/reviews/slider-small/slider-small_1.png" alt="avatar">
+										</div>
+										<div class="slider-small-reviews__content">
+											<div class="slider-small-reviews__name">Евгений</div>
+											<div class="slider-small-reviews__town">Санкт-Петербург</div>
+										</div>
+									</div>
+									<div class="slider-small-reviews__slide swiper-slide">
+										<div class="slider-small-reviews__icon">
+											<img src="@img/reviews/slider-small/slider-small_2.png" alt="avatar">
+										</div>
+										<div class="slider-small-reviews__content">
+											<div class="slider-small-reviews__name">Александр</div>
+											<div class="slider-small-reviews__town">Санкт-Петербург</div>
+										</div>
+									</div>
+									<div class="slider-small-reviews__slide swiper-slide">
+										<div class="slider-small-reviews__icon">
+											<img src="@img/reviews/slider-small/slider-small_3.png" alt="avatar">
+										</div>
+										<div class="slider-small-reviews__content">
+											<div class="slider-small-reviews__name">Вячеслав</div>
+											<div class="slider-small-reviews__town">Санкт-Петербург</div>
+										</div>
+									</div>
+									<div class="slider-small-reviews__slide swiper-slide">
+										<div class="slider-small-reviews__icon">
+											<img src="@img/reviews/slider-small/slider-small_4.png" alt="avatar">
+										</div>
+										<div class="slider-small-reviews__content">
+											<div class="slider-small-reviews__name">Елена</div>
+											<div class="slider-small-reviews__town">Санкт-Петербург</div>
+										</div>
+									</div>
+									<div class="slider-small-reviews__slide swiper-slide">
+										<div class="slider-small-reviews__icon">
+											<img src="@img/reviews/slider-small/slider-small_5.png" alt="avatar">
+										</div>
+										<div class="slider-small-reviews__content">
+											<div class="slider-small-reviews__name">Евгений</div>
+											<div class="slider-small-reviews__town">Санкт-Петербург</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="reviews__main">
+					<div class="reviews__slider-big slider-big-reviews">
+						<div class="slider-big-reviews__container _container">
+							<div class="slider-big-reviews__body">
+								<div class="slider-big-reviews__arrows">
+									<button type="button"
+										class="slider-big-reviews__arrow slider-arrow slider-arrow_prev _icon-slider-arrow _link_arrow-slider"></button>
+									<div class="slider-big-reviews__pagination"></div>
+									<button type="button"
+										class="slider-big-reviews__arrow slider-arrow slider-arrow_next _icon-slider-arrow _link_arrow-slider"></button>
+								</div>
+								<div class="slider-big-reviews__slider swiper">
+									<div class=" slider-big-reviews__wrapper swiper-wrapper">
+										<div class=" slider-big-reviews__slide swiper-slide">
+											<div class="slider-big-reviews__name">Евгений</div>
+											<div data-showmore="items"
+												class="slider-big-reviews__showmore showmore-reviews">
+												<div data-showmore-content="1" class="showmore-reviews__content">
+													<p>
+														Tony has more than 10 years of experience, building and
+														implementing
+														startups. As CTO of Flexo, Tony projects the vision of the
+														company
+														by
+														directing its strategic technology investments. Before Flexo,
+														Tony
+														was
+														Senior Director of Research and Modeling at CDA Insurance, where
+														he
+														managed a team of developers. Tom has his master’s degree in
+														Analytics,
+														and a bachelor’s degree in Psychology from University of London.
+													</p>
+													<p>
+														qwerty123
+													</p>
+													<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+														quae quasi quam corporis aspernatur nemo perferendis ratione
+														quidem iure ea. Magnam iste aliquam inventore molestiae eius
+														ratione. Eaque, quia voluptatibus.</p>
+												</div>
+												<div class="showmore-reviews__bottom">
+													<div class="showmore-reviews__stars">
+														<span class="showmore-reviews__star _icon-star"></span>
+														<span class="showmore-reviews__star _icon-star"></span>
+														<span class="showmore-reviews__star _icon-star"></span>
+														<span class="showmore-reviews__star _icon-star"></span>
+														<span class="showmore-reviews__star _icon-star"></span>
+													</div>
+													<button hidden data-showmore-button type="button"
+														class="showmore-reviews__more _link_icon"><span>Подробнее...</span><span>Скpыть</span></button>
+												</div>
+											</div>
+										</div>
+										<div class=" slider-big-reviews__slide swiper-slide">
+											<div class="slider-big-reviews__name">Евгений</div>
+											<div data-showmore="items"
+												class="slider-big-reviews__showmore showmore-reviews">
+												<div data-showmore-content="1" class="showmore-reviews__content">
+													<p>
+														Tony has more than 10 years of experience, building and
+														implementing
+														startups. As CTO of Flexo, Tony projects the vision of the
+														company
+														by
+														directing its strategic technology investments. Before Flexo,
+														Tony
+														was
+														Senior Director of Research and Modeling at CDA Insurance, where
+														he
+														managed a team of developers. Tom has his master’s degree in
+														Analytics,
+														and a bachelor’s degree in Psychology from University of London.
+													</p>
+													<p>
+														qwerty123
+													</p>
+												</div>
+												<div class="showmore-reviews__bottom">
+													<div class="showmore-reviews__stars">
+														<span class="showmore-reviews__star _icon-star"></span>
+														<span class="showmore-reviews__star _icon-star"></span>
+														<span class="showmore-reviews__star _icon-star"></span>
+														<span class="showmore-reviews__star _icon-star"></span>
+														<span class="showmore-reviews__star _icon-star"></span>
+													</div>
+													<button hidden data-showmore-button type="button"
+														class="showmore-reviews__more _link_icon"><span>Подробнее...</span><span>Скpыть</span></button>
+												</div>
+											</div>
+										</div>
+										<div class=" slider-big-reviews__slide swiper-slide">
+											<div class="slider-big-reviews__name">Евгений</div>
+											<div data-showmore="items"
+												class="slider-big-reviews__showmore showmore-reviews">
+												<div data-showmore-content="1" class="showmore-reviews__content">
+													<p>
+														Tony has more than 10 years of experience, building and
+														implementing
+														startups. As CTO of Flexo, Tony projects the vision of the
+														company
+														by
+														directing its strategic technology investments. Before Flexo,
+														Tony
+														was
+														Senior Director of Research and Modeling at CDA Insurance, where
+														he
+														managed a team of developers. Tom has his master’s degree in
+														Analytics,
+														and a bachelor’s degree in Psychology from University of London.
+													</p>
+													<p>
+														qwerty123
+													</p>
+												</div>
+												<div class="showmore-reviews__bottom">
+													<div class="showmore-reviews__stars">
+														<span class="showmore-reviews__star _icon-star"></span>
+														<span class="showmore-reviews__star _icon-star"></span>
+														<span class="showmore-reviews__star _icon-star"></span>
+														<span class="showmore-reviews__star _icon-star"></span>
+														<span class="showmore-reviews__star _icon-star"></span>
+													</div>
+													<button hidden data-showmore-button type="button"
+														class="showmore-reviews__more _link_icon"><span>Подробнее...</span><span>Скpыть</span></button>
+												</div>
+											</div>
+										</div>
+										<div class=" slider-big-reviews__slide swiper-slide">
+											<div class="slider-big-reviews__name">Евгений</div>
+											<div data-showmore="items"
+												class="slider-big-reviews__showmore showmore-reviews">
+												<div data-showmore-content="1" class="showmore-reviews__content">
+													<p>
+														Tony has more than 10 years of experience, building and
+														implementing
+														startups. As CTO of Flexo, Tony projects the vision of the
+														company
+														by
+														directing its strategic technology investments. Before Flexo,
+														Tony
+														was
+														Senior Director of Research and Modeling at CDA Insurance, where
+														he
+														managed a team of developers. Tom has his master’s degree in
+														Analytics,
+														and a bachelor’s degree in Psychology from University of London.
+													</p>
+													<p>
+														qwerty123
+													</p>
+												</div>
+												<div class="showmore-reviews__bottom">
+													<div class="showmore-reviews__stars">
+														<span class="showmore-reviews__star _icon-star"></span>
+														<span class="showmore-reviews__star _icon-star"></span>
+														<span class="showmore-reviews__star _icon-star"></span>
+														<span class="showmore-reviews__star _icon-star"></span>
+														<span class="showmore-reviews__star _icon-star"></span>
+													</div>
+													<button hidden data-showmore-button type="button"
+														class="showmore-reviews__more _link_icon"><span>Подробнее...</span><span>Скpыть</span></button>
+												</div>
+											</div>
+										</div>
+										<div class=" slider-big-reviews__slide swiper-slide">
+											<div class="slider-big-reviews__name">Евгений</div>
+											<div data-showmore="items"
+												class="slider-big-reviews__showmore showmore-reviews">
+												<div data-showmore-content="1" class="showmore-reviews__content">
+													<p>
+														Tony has more than 10 years of experience, building and
+														implementing
+														startups. As CTO of Flexo, Tony projects the vision of the
+														company
+														by
+														directing its strategic technology investments. Before Flexo,
+														Tony
+														was
+														Senior Director of Research and Modeling at CDA Insurance, where
+														he
+														managed a team of developers. Tom has his master’s degree in
+														Analytics,
+														and a bachelor’s degree in Psychology from University of London.
+													</p>
+													<p>
+														qwerty123
+													</p>
+												</div>
+												<div class="showmore-reviews__bottom">
+													<div class="showmore-reviews__stars">
+														<span class="showmore-reviews__star _icon-star"></span>
+														<span class="showmore-reviews__star _icon-star"></span>
+														<span class="showmore-reviews__star _icon-star"></span>
+														<span class="showmore-reviews__star _icon-star"></span>
+														<span class="showmore-reviews__star _icon-star"></span>
+													</div>
+													<button hidden data-showmore-button type="button"
+														class="showmore-reviews__more _link_icon"><span>Подробнее...</span><span>Скpыть</span></button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div data-video-block class="reviews__video">
+						<button data-video-button type="button"
+							class="reviews__video-button _icon-video-arrow"></button>
+						<video src="@img/reviews/avto.mp4" poster="@img/reviews/video-poster.jpg" preload="metadata"
+							controls></video>
+					</div>
+				</div>
+			</section>
+			<section class="page__contacts contacts _open-block">
+				<div id="map"></div>
+				<div class="contacts__container _container">
+					<div class="contacts__block">
+						<button type="button" class="contacts__button-close"></button>
+						<div class="contacts__title">КОНТАКТЫ</div>
+						<div class="contacts__text">Поможем подобрать наилучший вариант</div>
+						<div class="contacts__middle middle-contacts">
+							<div class="middle-contacts__item middle-contacts__item_address _icon-location">
+								<div class="middle-contacts__content">
+									<div class="middle-contacts__name">Наш адрес:</div>
+									<a target="_blank"
+										href="https://www.google.com/maps/search/?api=1&query=59.937997%2C30.244784"
+										class="middle-contacts__address _link_icon">Санкт-Петербург, Таежная улица,
+										37</a>
+								</div>
+							</div>
+							<div class="middle-contacts__item middle-contacts__item_email _icon-email">
+								<div class="middle-contacts__content">
+									<div class="middle-contacts__name">Наша почта:</div>
+									<a href="mailto:galeoncar@internet.ru"
+										class="middle-contacts__email _link_icon">galeoncar@internet.ru</a>
+								</div>
+							</div>
+						</div>
+						<div class="contacts__footer footer-contacts">
+							<div class="footer-contacts__top">
+								<a href="" class="footer-contacts__link btn btn_rent-type">ЗАКАЗАТЬ МАШИНУ</a>
+								<div class="footer-contacts__phone-block phone-contacts">
+									<a href="tel:+89958883094" class="phone-contacts__phone _link_icon">8 (995)
+										888-30-94</a>
+									<div class="phone-contacts__text">Звоните или оставляйте заявку</div>
+								</div>
+							</div>
+							<div class="footer-contacts__bottom">
+								<div class="footer-contacts__social-text">Мы в соц сетях:</div>
+								<div class="footer-contacts__social social">
+									<a href="" class="social__item _link_icon _icon-Facebook"></a>
+									<a href="" class="social__item _link_icon _icon-Instagram"></a>
+									<a href="" class="social__item _link_icon _icon-vk"></a>
+									<a href="" class="social__item _link_icon _icon-whatsup"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvIlzTm_UmePghyUJkLARbCKl9OqibOQo&callback=initMap&libraries=&v=weekly"
+		async defer></script>
+</body>
+
+</html>

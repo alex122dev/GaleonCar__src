@@ -1,0 +1,210 @@
+// Заголовки, общие БЄМ блоки и проче...
+* {
+    outline: none;
+}
+
+._container {
+    @if ($maxWidthContainer>0) {
+        max-width: rem($maxWidthContainer);
+        box-sizing: content-box;
+        margin: 0 auto;
+    }
+    @if ($containerPadding>0) {
+        padding: 0 rem(math.div($containerPadding, 2));
+    }
+}
+
+._ibg {
+    position: relative;
+	img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		object-fit: cover;
+	}
+}
+
+a._link,
+button._link {
+    transition: all 0.3s ease 0s;
+    &_text {
+         @media (any-hover: hover){
+             &:hover{
+                 color: $goldColor;
+             }
+         }
+         &:focus {
+             color: #fff;
+         }
+         &:active{
+             color: $redColor;
+         }
+    }
+    &_icon {
+        &::before{
+            transition: all 0.3s ease 0s;
+        }
+        @media (any-hover: hover){
+            &:hover{
+                color: $goldColor;
+                &::before{
+                    color: $goldColor;
+                }
+            }
+        }
+        &:focus {
+            color: #eca261;
+            &::before{
+                color: #eca261;
+            }
+        }
+        &:active{
+            color: $redColor;
+            &::before{
+                color: $redColor;
+            }
+        }
+    }
+    &_arrow-slider {
+        &::before{
+            transition: all 0.3s ease 0s;
+        }
+        @media (any-hover: hover){
+            &:hover{
+                color: $goldColor;
+                &::before{
+                    color: $goldColor;
+                }
+            }
+        }
+        &:focus {
+            color: $goldColor;
+            &::before{
+                color: $goldColor;
+            }
+        }
+        &:active{
+            color: $redColor;
+            &::before{
+                color: $redColor;
+            }
+        }
+    }
+}
+
+.btn {
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (any-hover: hover){
+        &:hover{
+            border-color: $goldColor;
+            background-color: #433a35;
+        }
+    }
+    &:focus {
+        border-color: $goldColor;
+        background-color: #433a35;
+    }
+    &:active {
+        border-color: $redColor;
+        background-color: #351116;
+    }
+
+    &_rent-type {
+        padding: 5px 15px;
+        min-width: 222px;
+        max-width: 100%;
+        min-height: 48px;
+        border-radius: 6px;
+        font-weight: 600;
+        line-height: math.div(26 , 16);
+        text-transform: uppercase;
+        @media (max-width:$mobile){
+             font-size: 14px; 
+        }
+    }
+    &_rent-type-link {
+        font-size: 14px;
+        line-height: math.div(22 , 14);
+        border-radius: 10px;
+        border-color: $goldColor;
+        text-transform: uppercase;
+        padding: 5px 15px;
+        width: 222px;
+        min-height: 41px;
+    }
+}
+
+.subtitle {
+    font-size: 24px;
+    line-height: math.div(29 , 24);
+    letter-spacing: 0.05em;
+    text-align: center;
+    text-transform: uppercase;
+    @media (max-width: em(1000)){
+          font-size: 18px;
+    }
+    @media (max-width: em(411)){
+         font-size: 14px; 
+    }
+}
+.title {
+    font-size: 48px;
+    line-height: math.div(61 , 48);
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $goldColor;
+    text-align: center;
+    @media (max-width: em(1000)){
+         font-size: 36px; 
+    }
+    @media (max-width: em(411)){
+         font-size: rem(24); 
+    }
+}
+
+.slider-arrows {
+
+}
+.slider-arrow {
+    &::before{
+        color: #fff;
+        font-size: rem(12);
+    }
+	// .slider-arrow_prev
+	&_prev {
+        &::before{
+            transform: rotate(0deg);
+        }
+    }
+	// .slider-arrow_next
+	&_next {
+        &::before{
+            transform: rotate(-180deg);
+        }
+    }
+}
+
+.swiper-pagination-bullets {
+    margin: 0 27px;
+    display: flex;
+    height: 2px;
+    width: 60px;
+}
+.swiper-pagination-bullet {
+    height: 2px;
+    flex: 1 1 auto;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease 0s;
+}
+.swiper-pagination-bullet-active {
+    background-color: #fff;
+}

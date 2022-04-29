@@ -1,0 +1,193 @@
+//====================================================================================================
+.footer {
+    background-color: $headerBlack;
+    padding: 42px 0 51px 0;
+    @media (max-width:$mobile){
+        padding: 27px 0 51px 0;
+    }
+    @media (max-width: em(1280)){
+        padding: 27px 0 35px 0;
+    }
+    @media (max-width: em(411)){
+        padding: 18px 0 35px 0;
+    }
+    // .footer__container
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    // .footer__logo
+    &__logo {}
+    // .footer__menu
+    &__menu {
+    }
+    // .footer__year
+    &__year {
+        padding: 0 30px;
+        margin-bottom: rem(25);
+        position: relative;
+        @media (max-width: em(1280)){
+           padding: 0 20px;   
+        }
+        @media (max-width:$mobile){
+             padding: 0 15px; 
+        }
+        @media (max-width: em(411)){
+             padding: 0 10px;
+             margin-bottom: rem(15); 
+        }
+        &::before{
+            content:'';
+            position: absolute;
+            top: calc(50% - 1px);
+            right: 100%;
+            width: 100vw;
+            height: 1px;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        &::after{
+            content:'';
+            position: absolute;
+            top: calc(50% - 1px);
+            left: 100%;
+            width: 100vw;
+            height: 1px;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        font-size: 13px;
+        span {
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+    }
+    // .footer__copyright
+    &__copyright {
+        color: rgba(255, 255, 255, 0.7);
+        letter-spacing: 0.05em;
+
+        margin-bottom: rem(20);
+
+        @media (max-width:$mobile){
+             font-size: rem(14); 
+        }
+        @media (max-width: em(400)){
+             font-size: rem(13); 
+        }
+    }
+    // .footer__social
+    &__social {
+        & .social__item {
+            &::before{
+                font-size: 16px;
+            }
+        }
+    }
+}
+.logo-footer {
+    margin-bottom: rem(35);
+    @media (max-width:$mobile){
+         margin-bottom: rem(20); 
+    }
+    // .logo-footer__image
+    &__image {
+        height: rem(82);
+        width: rem(65);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-bottom: rem(3);
+        img {
+			display: block;
+			max-width: 100%;
+			max-height: 100%;
+		}
+    }
+    // .logo-footer__content
+    &__content {}
+    // .logo-footer__top
+    &__top {
+        font-size: rem(4);
+		letter-spacing: 0.05em;
+        margin-bottom: rem(1);
+
+		display: flex;
+		align-items: center;
+		&::after{
+			content:'';
+			display: block;
+			height: rem(1);
+			width: 100%;
+			background-color: #fff;
+			margin-left: 3px;
+		}
+    }
+    // .logo-footer__title
+    &__title {
+        font-family: palatino;
+		font-size: rem(10);
+		font-weight: 700;
+		text-transform: uppercase;
+        margin-bottom: rem(1);
+    }
+    // .logo-footer__bottom
+    &__bottom {
+        font-size: rem(4);
+		letter-spacing: 0.05em;
+
+		display: flex;
+		align-items: center;
+		&::before{
+			content:'';
+			display: block;
+			height: rem(1);
+			width: 100%;
+			background-color: #fff;
+			margin-right: 4px;
+		}
+    }
+}
+.menu-footer {
+    margin-bottom: rem(50);
+    @media (max-width: em(1280)){
+         margin-bottom: rem(35); 
+    }
+    @media (max-width: em(1000)){
+         margin-bottom: rem(20); 
+    }
+    @media (max-width: em(411)){
+        display: none;
+    }
+    // .menu-footer__list
+    &__list {
+        display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+        @media (max-width: em(700)){
+             justify-content: center; 
+        }
+    }
+    // .menu-footer__item
+    &__item {
+        padding: 0 12px;
+    }
+    // .menu-footer__link
+    &__link {
+        font-size: 18px;
+		line-height: math.div(25 , 18);
+		letter-spacing: 0.05em;
+		color: rgba(255, 255, 255, 0.8);
+		transition: all 0.3s ease 0s;
+		@media (max-width: $mobile){
+			font-size: 14px; 
+		}
+    }
+}
+.social {
+    // .social__item
+    &__item {}
+}
+
+//====================================================================================================
